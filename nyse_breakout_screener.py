@@ -11,7 +11,6 @@ import yfinance as yf
 from datetime import datetime, timedelta
 import plotly.graph_objects as go
 import plotly.express as px
-from streamlit_option_menu import option_menu
 import warnings
 warnings.filterwarnings('ignore')
 
