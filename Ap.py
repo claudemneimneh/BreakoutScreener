@@ -207,7 +207,7 @@ if 'last_update' not in st.session_state:
 
 # Header
 st.markdown("# 📈 NYSE Breakout Screener")
-st.markdown("*Find stocks breaking out with high volume confirmation*")
+st.markdown("Find stocks breaking out with high volume confirmation")
 
 # Navigation
 col1, col2, col3, col4 = st.columns(4)
@@ -386,7 +386,7 @@ elif st.session_state.page == "settings":
     
     with col1:
         st.info("""
-        **Min Score:** Number of criteria that must be met (2-5)
+        *Min Score:* Number of criteria that must be met (2-5)
         - 2: Aggressive (more signals)
         - 3: Balanced (default)
         - 5: Conservative (high quality)
@@ -394,7 +394,7 @@ elif st.session_state.page == "settings":
     
     with col2:
         st.info("""
-        **Min Volume:** Multiple of 20-day average
+        *Min Volume:* Multiple of 20-day average
         - 1.5x: Low bar (more signals)
         - 2.0x: Good confirmation
         - 3.0x: High confirmation
@@ -404,23 +404,23 @@ elif st.session_state.page == "settings":
     st.markdown("""
     The screener checks 5 criteria:
     
-    1. **Price > 52-week high** - New territory
-    2. **Price > 200-day MA** - Long-term uptrend
-    3. **Price > 30-day swing high** - Recent resistance break
-    4. **Volume > 2x average** - Confirmation
-    5. **Price change > 0%** - Positive momentum
+    1. *Price > 52-week high* - New territory
+    2. *Price > 200-day MA* - Long-term uptrend
+    3. *Price > 30-day swing high* - Recent resistance break
+    4. *Volume > 2x average* - Confirmation
+    5. *Price change > 0%* - Positive momentum
     
     Each criterion = +1 score (max 5)
     """)
     
     st.subheader("📈 Technical Indicators")
     st.markdown("""
-    **RSI (0-100):**
+    *RSI (0-100):*
     - 0-30: Oversold
     - 30-70: Normal range
     - 70-100: Overbought
     
-    **Volume Ratio:**
+    *Volume Ratio:*
     - Measures buying pressure
     - 2.0x = Double normal volume
     - 3.0x+ = Strong conviction
@@ -445,18 +445,18 @@ elif st.session_state.page == "about":
     ## NYSE Breakout Stock Screener
     
     ### What It Does
-    Identifies NYSE stocks that are **breaking out** with **high volume confirmation**.
+    Identifies NYSE stocks that are *breaking out* with *high volume confirmation*.
     
     A breakout occurs when a stock price breaks above a key resistance level 
     (52-week high, 200-day moving average, or recent swing high) with increased volume.
     
     ### How It Works
-    1. **Scans** 26 liquid NYSE stocks
-    2. **Calculates** technical indicators (moving averages, RSI, volume)
-    3. **Scores** each stock (0-5 criteria met)
-    4. **Filters** based on your criteria
-    5. **Ranks** by probability of success
-    6. **Displays** interactive charts and data
+    1. *Scans* 26 liquid NYSE stocks
+    2. *Calculates* technical indicators (moving averages, RSI, volume)
+    3. *Scores* each stock (0-5 criteria met)
+    4. *Filters* based on your criteria
+    5. *Ranks* by probability of success
+    6. *Displays* interactive charts and data
     
     ### Key Features
     ✅ Real-time stock data (Yahoo Finance)
@@ -467,31 +467,31 @@ elif st.session_state.page == "about":
     ✅ No sign-up required
     
     ### How to Use
-    1. Go to **SCAN** tab
+    1. Go to *SCAN* tab
     2. Adjust parameters (min score, min volume)
-    3. Click **RUN SCAN**
-    4. View results in **RESULTS** tab
+    3. Click *RUN SCAN*
+    4. View results in *RESULTS* tab
     5. Download data if needed
     
     ### Important Notes
-    ⚠️ **Educational purposes only** - Not financial advice
-    ⚠️ **Trade at your own risk** - Use proper risk management
-    ⚠️ **Backtest first** - Test strategy before risking money
-    ⚠️ **False signals possible** - ~50% of breakouts fail
+    ⚠️ *Educational purposes only* - Not financial advice
+    ⚠️ *Trade at your own risk* - Use proper risk management
+    ⚠️ *Backtest first* - Test strategy before risking money
+    ⚠️ *False signals possible* - ~50% of breakouts fail
     
     ### Strategies
     
-    **Aggressive** (More signals):
+    *Aggressive* (More signals):
     - Min Score: 2
     - Min Volume: 1.5x
     - Result: 10-15 stocks daily
     
-    **Balanced** (Default):
+    *Balanced* (Default):
     - Min Score: 3
     - Min Volume: 2.0x
     - Result: 5-8 stocks daily
     
-    **Conservative** (High quality):
+    *Conservative* (High quality):
     - Min Score: 5
     - Min Volume: 3.0x
     - Result: 1-3 stocks daily
@@ -504,9 +504,9 @@ elif st.session_state.page == "about":
     ### Contact & Support
     For issues or questions, refer to the documentation or review the code on GitHub.
     
-    **Version:** 1.0  
-    **Last Updated:** January 2024  
-    **Made with ❤️ for traders and investors**
+    *Version:* 1.0  
+    *Last Updated:* January 2024  
+    *Made with ❤️ for traders and investors*
     """)
 
 # ============================================================================
